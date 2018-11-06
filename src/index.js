@@ -31,14 +31,19 @@ function appendToy(elem){
   btn.className = "like-btn"
   toyDiv.appendChild(btn)
   toyDiv.id = elem.id
+
+  toyDiv.addEventListener('click', deleteToy)
+
   toyCollection.appendChild(toyDiv)
 
   btn.addEventListener('click', findLikes)
+
   }
 
   function findLikes(event) {
     let id = event.target.parentNode.id
     let url = `http://localhost:3000/toys/${id}`
+    event.stopPropagation()
     fetch(url)
       .then(res => res.json())
       .then(result => increaseLikes(url, result.likes))
@@ -59,6 +64,18 @@ function appendToy(elem){
     })
     .then(response => response.json())
     .then(data => changeDOMLikes(data))
+  }
+
+  function deleteToy(event) {
+    let id = event.currentTarget.id
+    let url = `http://localhost:3000/toys/${id}`
+    fetch(url, {
+      method: "DELETE"
+    })
+    .then(response => response.json())
+    .then(data => {
+    console.log(data)
+    document.getElementById(id).remove() })
   }
 
   function changeDOMLikes(data) {
