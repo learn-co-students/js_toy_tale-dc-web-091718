@@ -10,13 +10,13 @@
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": 13
     },
     {
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 3
+      "likes": 10
     },
     {
       "id": 4,
@@ -47,6 +47,36 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Spooky Monkey",
+      "image": "https://i.ytimg.com/vi/J2dt8Cls9AQ/hqdefault.jpg",
+      "likes": 3,
+      "id": 9
+    },
+    {
+      "name": "Spookier Monkey",
+      "image": "https://i.ytimg.com/vi/J2dt8Cls9AQ/hqdefault.jpg",
+      "likes": 6,
+      "id": 10
+    },
+    {
+      "name": "Spookiest Monkey",
+      "image": "https://i.ytimg.com/vi/J2dt8Cls9AQ/hqdefault.jpg",
+      "likes": 10,
+      "id": 11
+    },
+    {
+      "name": "Sponkey Monky",
+      "image": "https://i.ytimg.com/vi/J2dt8Cls9AQ/hqdefault.jpg",
+      "likes": 6,
+      "id": 12
+    },
+    {
+      "name": "Lightening Mcqueen",
+      "image": "https://i.ytimg.com/vi/J2dt8Cls9AQ/hqdefault.jpg",
+      "likes": 4,
+      "id": 13
     }
   ]
 }
